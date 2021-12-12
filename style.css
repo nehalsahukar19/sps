@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+   
+}
+body{
+    font-family: 'Irish Grover', cursive;;
+    background-image: url("images/ato.jpeg") ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+}
+p{
+    color: rgb(0, 0, 0);
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    float:right;
+}
+.col-2 h1{
+    font-style:50px;
+    line-height: 60px;
+    margin: 30px 0;
+}
+
+.dropbtn{
+    background-color: #ff2828;
+    color: white;
+    padding: 8px 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f0e6e6;
+    width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.dropdown-content a{
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: #d200ee42;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #8d3535;
+}
