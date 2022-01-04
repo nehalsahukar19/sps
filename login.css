@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://images.unsplash.com/photo-1506521781263-d8422e82f27a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGFya2luZ3xlbnwwfHwwfHw%3D&w=1000&q=80);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.form{
+    width: 380px;
+    height: 480px;
+    background: rgba(0,0,0,0.5);
+    color: #f7f7f7;
+    margin: 6% auto;
+    position: relative;
+    padding: 5px;
+    overflow: hidden;
+}
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 3px rgba(255,255,255,0.4);
+    border-radius: 35px;
+}
+.toggle-btn{
+    padding:  10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right,#fc650d,#faeed9) ;
+    border-radius: 30px;
+}
+.social-media{
+    margin:  30px auto;
+    text-align: center;
+}
+.social-media img{
+    width: 30px;
+    margin: 0 10px;
+    box-shadow: 0 0 20px 0 #f7f7f7;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.login-form{
+    top: 180px;
+    position: absolute;
+    border: 2px solid #777;
+    margin: 0 35px;
+    width: 200px;
+    transition: 1s;
+}
+.form-field{
+    width: 100%;
+    padding: 10px 0;
+    color: white;
+    margin: 5px 0px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom:2px solid #999;
+    outline: none;
+    background: transparent ;
+}
+
+.checkbox{
+    margin: 30px 5px;
+}
+span{
+    color: #777;
+    font-size: 12px;
+    box-shadow: 64px;
+    position: absolute;
+}
+#login{
+    left: 50px;
+
+}
+#register{
+    left: 450px;
+    
+}
+.btn{
+    background-color: orangered;
+    border: none;
+    color: white;
+    padding:10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-left: 65px;
+    cursor: pointer;
+    border-radius: 30px;
+  }

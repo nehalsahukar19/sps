@@ -1,58 +1,167 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>SMART PARKING SYSTEM</title>
-    <link href="<link href="<link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">">"
-</head>
-<body>
-    
-        
-            
-                <div class="container">
-                    <div class="navbar">
-                        <div class="logo">
-                            <img src="images/logo.jpg" width="125px">
-                        </div>
-                        <nav>
-                            <ul>
-                                <li><a href="">Home</a></li>
-                                <li><a href="">Products</a></li>
-                                <li><a href="">About</a></li>
-                                <li><a href="">Contact</a></li>
-                                <li><a href="">Account</a></li>
-                            </ul>
-                        </nav>
-                        <img src="images/cart.png" width="30">
-                    </div>
+ <!DOCTYPE html>
+ <html>
+     <head>
+     <title>SMART PARKING SYSTEM </title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Oswald&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+     </head>
+         <body>
+             
+             <section class="header">
+                <video  class="video-fix" poster="./src/gmp-poster.jpg" id="gmp-video" autoplay loop muted playsinline
+                webkit-playsinline>
+                <source src="images/backgroundvideo.mp4" type="video/mp4">   
+              </video>
+              <nav class="bg-im">
+                <a href="http://127.0.0.1:5500/homepage.html"><img src="images/smartparklogo.svg"></a>
+                <div class="nav-link" id="navLink">
+                   <!---<button ><i class="fa fa-close" onclick="hideMenu()"></i>></button>--->
+                    <ul>
+                        <li><a href="http://127.0.0.1:5500/homepage.html">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#features">FEATURES</a></li>
+                        <li><a href="http://127.0.0.1:5500/faqs.html">FAQs</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <!--<li><a href="http://127.0.0.1:5500/login.html">LOGIN</a></li>-->
+                    </ul>
                 </div>
-                <div class="row">
-                    <div clss="col-2">
-                        <h1>Automated Parking <br> System!</h1>
-                        <p>The road to sucess is dotted with many tempting parking spaces.</p>
-                        <br><br><br>
-                        <a>    <div class="dropdown">
-                            <button class="dropbtn">Select a city </button>
-                            <div class="dropdown-content">
-                                <a href="#">Banglore</a>
-                                <a href="">Pune</a>
-                                <a href="">Mumbai</a>
-                                <a href="">Delhi</a>
-                                <a href="">Hyderabad</a>
-                            </div>            
-                        </div>  </a>
-                    </div>
-                   
-                   
-                
-                </div>
-            
-    
+                <!----<span><i class="fas fa-bars" onclick="showMenu()"> </i></span>---->
+           </nav>
+              
+    <div class="text-box">
+        <h1>SMART PARKING</h1>
+        <h2>Accessible and convinient</h2>
+        <select>
+            <option>SELECT A MALL</option>
+            <option>ORION MALL</option>
+        </select><br><br>
+        <a href="http://127.0.0.1:5500/login.html" class="hero-btn">park your vehicle</a>
+    </div>
+             </section>
+<!-------------features---------------------------->
+<section class="features" id="features">
+    <h1 class ="features"><span>Features</span> of our website</h1>
+    <div class="row">
+        <div class="features-col">
+            <h3 class="title">Saves Time</h3>
+            <video width="300" height="350" controls> <source src="images/saves time.mp4" ></video>
+            <p>The biggest benefit of finding a car parking space in advance is that it 
+                saves you a lot of time. You don’t have to go round in circles trying to look 
+                for an appropriate place to keep your car. Just book a parking space with this
+                 website and get going about your business.
+            </p>
+        </div>
+        <div class="features-col">
+            <h3 class="title">Safety</h3>
+            <video width="300" height="350" controls> <source src="images/safety.mp4" ></video>
+            <p>In case you park at a non-designated spot, you stand a chance
+                 of your car getting towed or you being fined for incorrect parking.
+                  However, with this website, you can leave your vehicle at a parking lot,worry-free!
+            </p>
+        </div>
+        <div class="features-col">
+            <h3 class="title">Smart Parking</h3>
+            <video width="300" height="350" controls> <source src="images/smartparkingvideo.mp4" ></video>
+            <p>With everything going digital in this technology-driven world, why leave parking spaces
+                 behind? You can find a car parking area near the place you’re visiting anywhere in
+                  India with just a few simple clicks.
+            </p>
+        </div>
+    </div>
+</section>
+<!------------------------ about------------------------------------------------------------------->
+<section class="about" id="about"> 
+    <h1 class="about"><span>About</span></h1>
+    <br>
+    <br>
+    <div class="row1">
+    <div class="about-col"> 
+        <img src="images/prk.jpg" style="width:400px;height:285px;margin-left: 25px";>
+    <p>   
+        <br>
+        <br> 
+        We at Parking system strive to solve the trivial/major problems of finding/booking available parking slots in vicinity which 
+         is faced by thousands or even millions of people all across the world on a daily basis. So, we are here to solve all of your 
+         parking problems through our website named as parking system. We view for solutions which brings technology and life closer and
+         accessible. Parking system is part of this new initiative and incorporates various features aimed at improving the parking
+          experience for residents and visitors. These will make the life of travellers a lot easy, since they don't need to be waiting 
+          infront of entry barriers at car park entrances and removes all the problems faced during parking the vehicle, which will reduce 
+         the traffic infront of malls, cinemas and hotels etc...       
+        <br>
+        <br>
+          <br>
+    </p>
+    </div>   
+    </div>
+</section>
+
+<!-------------services------------------------------------------------------------------------>
+<section class="services" id="services">
+    <h1 class="services"><span>Services</span></h1>
+    <div class="row">
+        <div class="services-col">
+            <h3 class="title">ONLINE BOOKING</h3>
+            <img src="images/online.jpg">
+            <p>Since a lot of people face parking problems at malls or hotels, we are providing a fastest 
+                way to park their vehicle through our website.
+                All you have to do is book an
+                empty parking slot through the website and get going with your business
+            </p>
+        </div>
+        <div class="services-col">
+            <h3 class="title">SCHEDULED PARKING</h3>
+            <img src="images/schedule.jpg">
+            <p>You can book a parking slot for a particular time and you can park your vehicle at that
+                 scheduled time. Which is more convinient compared to finding a parking slot whitout
+                  booking through the website.
+            </p>
+        </div>
+    </div>
+</section>
 
 
 
-</body>
-</html>
+<!-------------- Javascript for toggle menu--------------------------------------------------------------->
+            <script>
+
+                 var navLink= document.getElementById("navLink");
+                 function showMenu(){
+                     navLink.style.right = "0";
+                 }
+                 function hideMenu(){
+                     navLink.style.right = "200px";
+                 }
+             </script>
+
+<div class="footer-container">
+    <div class="footer">
+        <div class="footer-heading footer-1">
+            <h2> </h2>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social_icon">
+        <li><a href="https://www.facebook.com/profile.php?id=100076192026655"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="https://instagram.com/parking8293?utm_medium=copy_link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="https://twitter.com/SmartParking11?t=5NO08xonoTGgaxSKzkM4CA&s=09"><ion-icon name="logo-twitter"></ion-icon> </a></li>
+        <li><a href="https://www.linkedin.com/in/smart-parking-02a704228"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+    </ul>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+         </body>
+    </html>
