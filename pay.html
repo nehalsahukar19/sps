@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment page</title>
+    <link rel="stylesheet" href="pay.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="http://127.0.0.1:5500/homepage.html"><img src="https://lh3.googleusercontent.com/N8LxEaBwVEQ_B31XdQL1_NZ-4QbGK2Jhpvp1i_wJ3HFJASijQtU6BPnGGmSNwF9K_j9lExWOvnT4L96PNH0Vaq4lJM5Qga0_ukTl8g" width="220px" height="60px"></a>
+    <form action="action">
+        <h1>Payment</h1>
+        <label for="name">Payer Name</label><br>
+        <input class="box1" type="text" name="name" id="name" placeholder="Enter Name"><br>
+        <label for="email">Email</label><br>
+        <input  class="box1" type="email" name="email" id="email" placeholder="Enter Email"><br>
+        <label for="Card Number">Card Number</label><br>
+        <input  class="box1" type="number" name="number" id="number" placeholder="1234 1234 1234 1234"><br>
+        <div class="div1">
+            <label for="cardex"> Card expiry month</label><br>
+            <input class=" box2" type="month" name="month" id="month" placeholder="MM"><br>
+        </div>
+        <div class="div1">
+           
+        <label for="cardye">Card expiry year</label><br>
+        <input  class=" box2"  type="year" name="year" id="name" placeholder="yyyy"><br>  
+        </div>
+        <div class="div1">
+            <label for="cardCVC">Card CVC</label><br>
+        <input  class=" box2" type="CVC" name="CVC" id="CVC" placeholder="CVC"><br>
+        </div>
+        <br>
+        <button class="btn" type="button">Pay Now</button>
+        <a href="http://127.0.0.1:5500/homepage.html"><button class="btn" type="button">Close</button></a>
+    </form>
+</body>
+</html>
