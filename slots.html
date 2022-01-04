@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="slots.css" />
+    <title>Slot Booking</title>
+  </head>
+  <body>
+    <div class="park-container">
+      <label style="font-size: 30px;">Select Timings:</label>
+      <select id="park">
+        <option value="10">11:30 AM to 1:15 PM (RS.10)</option>
+        <option value="12">2:15 PM to 5:30 PM (Rs.12)</option>
+        <option value="8">7:45 PM to 10:45 PM(Rs.8)</option>
+        <option value="9">8:45 PM to 11:00 PM(Rs.9)</option>
+      </select>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div class="slot"></div>
+        <small>Available</small>
+      </li>
+      <li>
+        <div class="slot selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="slot occupied"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+
+    <div class="container">
+       <h1 style="text-align: center;">PARKING SLOTS</h1>
+
+      <div class="row">
+        <div class="slot" >SLOT 1</div>
+        <div class="slot" >SLOT 2</div>
+        <div class="slot " >SLOT 3</div>
+        <div class="slot occupied" >SLOT 4 </div>
+        <div class="slot" >SLOT 5</div>
+        <div class="slot" >SLOT 6</div>
+        <div class="slot" >SLOT 7</div>
+        <div class="slot" >SLOT 8</div>
+      </div>
+      <div class="row">
+        <div class="slot">SLOT 9</div>
+        <div class="slot" >SLOT 10</div>
+        <div class="slot">SLOT 11</div>
+        <div class="slot ">SLOT 12</div>
+        <div class="slot">SLOT 13</div>
+        <div class="slot">SLOT 14</div>
+        <div class="slot">SLOT 15</div>
+        <div class="slot">SLOT 16</div>
+      </div>
+      <div class="row">
+        <div class="slot occupied">SLOT 17</div>
+        <div class="slot">SLOT 18</div>
+        <div class="slot occupied">SLOT 19</div>
+        <div class="slot">SLOT 20</div>
+        <div class="slot">SLOT 21</div>
+        <div class="slot">SLOT 22</div>
+        <div class="slot ">SLOT 23</div>
+        <div class="slot occupied">SLOT 24</div>
+      </div>
+      <div class="row">
+        <div class="slot">SLOT 25</div>
+        <div class="slot">SLOT 26</div>
+        <div class="slot">SLOT 27</div>
+        <div class="slot ">SLOT 28</div>
+        <div class="slot">SLOT 29</div>
+        <div class="slot">SLOT 30</div>
+        <div class="slot">SLOT 31</div>
+        <div class="slot">SLOT 32</div>
+      </div>
+      <div class="row">
+        <div class="slot">SLOT 33</div>
+        <div class="slot">SLOT 34</div>
+        <div class="slot">SLOT 35</div>
+        <div class="slot occupied">SLOT 36</div>
+        <div class="slot">SLOT 37</div>
+        <div class="slot">SLOT 38</div>
+        <div class="slot">SLOT 39</div>
+        <div class="slot">SLOT 40</div>
+      </div>
+      <div class="row">
+        <div class="slot occupied">SLOT 41</div>
+        <div class="slot">SLOT 42</div>
+        <div class="slot">SLOT 43</div>
+        <div class="slot">SLOT 44</div>
+        <div class="slot">SLOT 45</div>
+        <div class="slot">SLOT 46</div>
+        <div class="slot occupied">SLOT 47</div>
+        <div class="slot">SLOT 48</div>
+      </div>
+    </div>
+
+    <p class="text" style="font-size: 40px;">
+      You have selected <span id="count">0</span> slots for a price of Rs.<span id="total" >0</span>
+    </p>
+    <a href="http://127.0.0.1:5500/pay.html"><button class="button">PAY</button></a>
+    <script src="slots.js"></script>
+</body>
+</html>
