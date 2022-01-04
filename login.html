@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Login Page</title>
+        <link rel="stylesheet" type="text/css" href="login.css">
+    </head>
+    <body>
+        <div class="container"> 
+            <div class="form">
+            <div class="button-box">
+                <div id="btn"></div>
+
+
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+           
+            <div class="social-media">
+               <a  href="https://instagram.com/parking8293?utm_medium=copy_link"><img src="images/insta.jpg"></a>
+                <a href="https://www.facebook.com/profile.php?id=100076192026655"><img src="images/facebook.jpg"></a>
+                <a href="https://twitter.com/SmartParking11?t=5NO08xonoTGgaxSKzkM4CA&s=09"><img src="images/twitter.png"></a>
+            </div>
+            
+            <form class="login-form"  id="login">
+                <label for="usrname">Username</label>
+                <input type="text" id="usrname" name="usrname">
+                <label for="psw">Password</label>
+                <input type="password" id="psw" name="psw" >
+                <input type="button"  style="background-color: blue; padding: 10px; margin-left:74px ;"  value="Login" onclick="newDoc()">
+                <input type="button"  style="background-color: red; color: white; padding: 10px; " value="Cancel" onclick="homeDoc()">
+                </form>
+            <form class="login-form" id="register">
+                <label for="usrname">Username</label>
+                <input type="text" id="usrname1" name="usrname">
+                <label for="mail">Email</label>
+                <input type="email" id="mail" name="mail">
+                <label for="psw">Password</label>
+                <input type="password" id="psw1" name="psw" ><br>
+             <!-- <input type="submit" style="background-color: orangered; color: white; border-radius: 20px; padding: 8px; margin-top: 20px; margin-left: 65px; margin-bottom: 20px; " value="Submit"> -->
+                <input type="button"  style="background-color: blue; padding: 10px; margin-left:74px ;"  value="Register" onclick="registers()">
+                 <input type="button"  style="background-color: red; color: white; padding: 10px; " value="Cancel" onclick="homeDoc()">
+            </form> 
+        </div>
+        </div>
+        <script>
+          function newDoc() {
+              var usr= document.getElementById("usrname").value;
+              var pwd = document.getElementById("psw").value;
+              if(usr=='' && pwd=='')
+              {
+                  alert("please fill in the required feild");
+              }
+              else if(usr=='' && pwd.length==1)
+            {
+                alert("please fill the username and password should be more than 6")
+            }
+            else if(usr=='' && pwd.length==2)
+            {
+                alert("please fill the username and password should be more than 6")
+            }
+            else if(usr=='' && pwd.length==3)
+            {
+                alert("please fill the username and password should be more than 6")
+            }
+            else if(usr=='' && pwd.length==4)
+            {
+                alert("please fill the username and password should be more than 6")
+            }
+            else if(usr=='' && pwd.length==5)
+            {
+                alert("please fill the username and password should be more than 6")
+            }
+            else if(usr=='' && pwd.length==6)
+            {
+                alert("please fill the username and password should be more than 6")
+            }
+              else  if(pwd=='')
+              {
+                  alert("please fill the password in the required feild");
+              }
+              else  if(usr=='')
+              {
+                  alert("please fill the username in the required form");
+              }
+             //else if(pwd.length<=6){
+               //  alert("password should be more than 6 characters");
+            //  }
+            
+              else if(pwd.length==1)
+              {
+                  alert("password is of 1 character .password should be more than 6 characters")
+              }
+              else if(pwd.length==2)
+              {
+                  alert("password is of 2 character .password should be more than 6 characters")
+              }
+              else if(pwd.length==3)
+              {
+                  alert("password is of 3 character .password should be more than 6 characters")
+              }
+              else if(pwd.length==4)
+              {
+                  alert("password is of 4 character .password should be more than 6 characters")
+              }
+              else if(pwd.length==5)
+              {
+                  alert("password is of 5 character .password should be more than 6 characters")
+              }
+              else if(pwd.length==6)
+              {
+                  alert("password is of 6 character .password should be more than 6 characters")
+              }
+              else{
+                  alert("Login successful")
+                 window.location.assign("http://127.0.0.1:5500/slots.html")
+              }
+}
+function registers() {
+              var user= document.getElementById("usrname1").value;
+              var email=document.getElementById("mail").value;
+              var pwd1 = document.getElementById("psw1").value;
+              if(user=='' && email=='' && pwd1=='' )
+              {
+                  alert("please fill in the required feild");
+              }
+              else  if(user=='')
+              {
+                  alert("please fill the username in the required form");
+              }
+              else  if(email=='')
+              {
+                  alert("please fill the email in the required feild");
+              }
+              else  if(pwd1=='')
+              {
+                  alert("please fill the password in the required feild");
+              }
+             //else if(pwd.length<=6){
+               //  alert("password should be more than 6 characters");
+            //  }
+              else if(pwd1.length==1)
+              {
+                  alert("password is of 1 character .password should be more than 6 characters")
+              }
+              else if(pwd1.length==2)
+              {
+                  alert("password is of 2 character .password should be more than 6 characters")
+              }
+              else if(pwd1.length==3)
+              {
+                  alert("password is of 3 character .password should be more than 6 characters")
+              }
+              else if(pwd1.length==4)
+              {
+                  alert("password is of 4 character .password should be more than 6 characters")
+              }
+              else if(pwd1.length==5)
+              {
+                  alert("password is of 5 character .password should be more than 6 characters")
+              }
+              else if(pwd1.length==6)
+              {
+                  alert("password is of 6 character .password should be more than 6 characters")
+              }
+              else{
+                alert("Registration successful")
+                 window.location.assign("http://127.0.0.1:5500/slots.html")
+              }
+}       
+function homeDoc(){
+  window.location.assign("http://127.0.0.1:5500/homepage.html")
+}
+
+            var x=document.getElementById("login");
+            var y=document.getElementById("register");
+            var z=document.getElementById("btn");
+
+            function register()
+            {
+                x.style.left="-400px";
+                y.style.left="50px";
+                z.style.left="110px";
+            }
+            function login()
+            {
+                x.style.left="50px";
+                y.style.left="450px";
+                z.style.left="0px";
+            }
+
+</script>
+ </body>
+</html>
+
