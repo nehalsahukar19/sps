@@ -1,45 +1,123 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <style type="text/css">
-    h4{color:orange}
-    h2{color:red}
-    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ's </title>
+    <title>FAQs</title>
+    <style>
+    body{
+        background-color: rgb(39, 39, 39);
+    }
+    .collapsible {
+        background-color: rgb(253, 173, 68);
+        color: rgb(252, 252, 252);
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+      }
+      
+      .active, .collapsible:hover {
+        background-color: rgb(252, 185, 122);
+      }
+      
+      .content {
+        color:rgb(14, 13, 13);
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+      }
+    </style>
 </head>
-<body style="background-image: url(images/faqs.jpg); height:1000px">
-<h2 style="color:rgb(245, 90, 62);  text-align: right;"><a href="http://127.0.0.1:5500/homepage.html" >Home</a></h2>   
-<h1 style="color:sandybrown;">FAQ's</h1>
- <h2>1. What is a smart parking system?</h2>
- <h4>Ans. A smart parking system is a technology that providesdata on parking space occupancy in a particular area in real time and makes it available to drivers through selected media (typically mobile applications and digital signage) for a facilitated searchof vacantparkingspots.The development of a particular smart parkingsystemincludeshardwaredesign,development of firmware and dedicated cloud software for processing vehicledetectionsensor data.</h4>
- <h2>2. What are the benefits of smart parking system</h2>
- <h4>Ans. The advantages of digitizing and disseminating real-time parking availability information are quite numerous, the most immediate benefitsinclude:
- <ul>
-    <li> Quickand easy way-finding;</li>
-    <li> Payments automation;</li>
-    <li> Overstay detection, unauthorized parking detection;</li>
-    <li> Rata intelligence and parkingratesoptimization;</li>
-    <li> Reducedair pollution; etc.</li>
-    <p> You can find out more details on how a robustvehicledetection systemcan benefityour organization or municipality here.</p>
- </ul></h4>
- <h2>3. How much can smart parking sensors cost?</h2>
- <h4>Ans. Some naysayers might suggest that a big disadvantage of a smartparkingsystemis its cost. However, some modern solutions boastaffordability whilebeingaccurateand easy to manage,as well as havingdecadelong batterylife.Any investment spendinghasto be evaluated from the ROI perspective. Nwave'scustomers reporta very fast return on investment some as quick as three months after the implementation.</h4>
- <h2>4. Is there any restrictions on how long can i leave my car in the car park when using smart parking?</h2>
- <h4>Ans. The maximum stay in the Car Park is 7 days. It is advisable to contact us if you are parking for over 5 days.</h4>
- <h2>5. Are my personal details safe?</h2>
- <h4>Ans. Yes, all customer details are protected in accordance with our privacy policy.</h4>
- <h2>6. What do i do if i notice an incorrect charge on my account?</h2>
- <h4>Ans. If you notice an incorrect charge has been made to your account, please email on the provided Emai-id and we’ll be happy to assist you.</h4>
- <h2>7. What if i enter the car park multiple times in one day?</h2>
- <h4>Ans. Each visit to our car park will be charged at the following rates, even if the visits happen in the same day.</h4>
- <h2>8. How can i check my usage?</h2>
- <h4>Ans. You can view your full parking history in your Smart Parking account. If you are using the Westfield App, go to the Account section and select Smart Parking History. If you prefer to login online, you’ll see Parking History section under the Smart Parking tab of your account.</h4>
- <h2>9. What do i do if i want to leave smart parking?</h2>
- <h4>Ans. We hope you won’t want to but if you do wish to cancel your Smart Parking membership, you can do so at any time from within the Smart Parking section of the My Westfield App or through the Westfield website. Simply log in to your account and select to delete your account under your account details. This action cannot be reversed.</h4>
- <h2>10. Who do i contact if i can't find an answer to my query?</h2>
- <h4>Ans. Send us an email at the provided Email-id and a member of our team will be in touch shortly.</h4>
+<body>
+    <h2 style="color:rgb(245, 90, 62);  text-align: right;"><a href="http://127.0.0.1:5500/homepage.html" >Home</a></h2>  
+    <title style="text-align: center;">FAQs</title>
+    <h1  style="text-align: center; color:rgb(241, 118, 30); font-size: 50px;">FAQ's</h1>
+    <button type="button" class="collapsible">1. What is a smart parking system?</button>
+<div class="content">
+  <p> A smart parking system is a technology that providesdata on parking space occupancy in a
+       particular area in real time and makes it available to drivers through selected media 
+       (typically mobile applications and digital signage) for a facilitated
+       searchof vacant parking spots.The development of a particular smart parkingsystemincludeshardwaredesign
+       ,development of firmware and dedicated cloud software for processing vehicledetectionsensor data.</p>
+</div>
+<button type="button" class="collapsible">2. What are the benefits of smart parking system?</button>
+<div class="content">
+    <p> The advantages of digitizing and disseminating real-time parking availability information are quite numerous,
+         the most immediate benefitsinclude:<ul>
+            <li> Quickand easy way-finding;</li>
+            <li> Payments automation;</li>
+            <li> Overstay detection, unauthorized parking detection;</li>
+            <li> Rata intelligence and parkingratesoptimization;</li>
+            <li> Reducedair pollution; etc.</li>
+            <p> You can find out more details on how a robustvehicledetection systemcan benefityour organization
+                 or municipality here.</p>
+         </ul>
+        </p>
+</div>
+<button type="button" class="collapsible">3. How much can smart parking sensors cost?</button>
+<div class="content">
+      <p>Some naysayers might suggest that a big disadvantage of a smartparkingsystemis its cost. However, some modern
+           solutions boastaffordability whilebeingaccurateand easy to manage,as well as havingdecadelong batterylife.Any
+            investment spendinghasto be evaluated from the ROI perspective. Nwave'scustomers reporta very fast return on
+             investment some as quick as three months after the implementation.</p>
+</div>
+<button type="button" class="collapsible">4. Is there any restrictions on how long can i leave my car in the car park
+     when using smart parking?</button>
+<div class="content">
+     <p>The maximum stay in the Car Park is 7 days. It is advisable to contact us if you are parking for over 5 days.</p>
+</div>
+<button type="button" class="collapsible">5. Are my personal details safe?</button>
+<div class="content">
+    <p> Yes, all customer details are protected in accordance with our privacy policy.</p>
+</div>
+<button type="button" class="collapsible">6. What do i do if i notice an incorrect charge on my account?</button>
+<div class="content">
+    <p> If you notice an incorrect charge has been made to your account, please email on the provided Emai-id and we’ll 
+        be happy to assist you.</p>
+</div>
+<button type="button" class="collapsible">7. What if i enter the car park multiple times in one day?</button>
+<div class="content">
+    <p> Each visit to our car park will be charged at the following rates, even if the visits happen in the same day.</p>
+</div>
+<button type="button" class="collapsible">8. How can i check my usage?</button>
+<div class="content">
+    <p> You can view your full parking history in your Smart Parking account. If you are using the Westfield App, go
+         to the Account section and select Smart Parking History. If you prefer to login online, you’ll see Parking 
+         History section under the Smart Parking tab of your account.</p>
+</div>
+<button type="button" class="collapsible">9. What do i do if i want to leave smart parking?</button>
+<div class="content">
+       <p> We hope you won’t want to but if you do wish to cancel your Smart Parking membership, you can do so at 
+           any time from within the Smart Parking section of the My Westfield App or through the Westfield website.
+            Simply log in to your account and select to delete your account under your account details. This action
+             cannot be reversed.</p>
+</div>
+<button type="button" class="collapsible">10. Who do i contact if i can't find an answer to my query?</button>
+<div class="content">
+    <p>Send us an email at the provided Email-id and a member of our team will be in touch shortly.</p>
+</div>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
 </body>
 </html>
